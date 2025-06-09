@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+}
+
+.header {
+    background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%);
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+#inputValue {
+    width: 100%;
+    max-width: 200px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    outline: none;
+}
+
+#inputValue::placeholder {
+    color: #999;
+    font-size: 1rem;
+}
+
+#convertBtn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid white;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#convertBtn:hover {
+    background: white;
+    color: #8B5CF6;
+}
+
+.results {
+    padding: 30px;
+    background: #2D3748;
+}
+
+.result-card {
+    background: #4A5568;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.result-card:last-child {
+    margin-bottom: 0;
+}
+
+.result-card h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #E2E8F0;
+}
+
+.result-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #CBD5E0;
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+    }
+    
+    .header {
+        padding: 30px 20px;
+    }
+    
+    .header h1 {
+        font-size: 1.3rem;
+    }
+    
+    .results {
+        padding: 20px;
+    }
+    
+    .result-card {
+        padding: 15px;
+    }
+}
