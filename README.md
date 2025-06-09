@@ -2,7 +2,7 @@
 
 A clean, responsive web application for converting between metric and imperial units. This converter handles length, volume, and mass conversions with an intuitive interface and real-time calculations.
 
-![Unit Converter Preview](https://via.placeholder.com/500x600/8B5CF6/FFFFFF?text=Unit+Converter)
+![Unit Converter Preview](Metric.png)
 
 ## Features
 
